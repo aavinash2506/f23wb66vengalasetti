@@ -1,0 +1,17 @@
+
+
+
+
+extends layout
+
+block content
+  h1= title
+  .container-fluid
+    .row
+      - for (let f of r)
+        .col-sm-2
+          h2= f.restaurant_name
+          p Item Type: #{f.item_type}
+          p Material: #{f.material}
+          p Price: #{f.price}
+  br
